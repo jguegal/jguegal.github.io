@@ -1,57 +1,74 @@
-#navigation-header {
+header, footer {
+    width: 100%;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    height: 3rem;
+    margin: 0.25rem 0rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+.navigation-header {
     width: 100%;
     border-radius: 0.5rem;
     display: inline-block;
 }
 
-#navigation-image {
+.navigation-image {
     float: left;
 }
 
-#navigation-links {
+.navigation-links {
     padding-top: 1.25rem;
     float: right;
     padding-right: 0.25rem;
 }
 
-#navigation-image img {
+.navigation-image img {
     height: 3rem;
     padding: 0.5rem 1rem 0.25rem;
 }
 
-#navigation-links a {
+.navigation-links a {
     text-decoration: none;
     font-size: x-large;
     padding-inline: 0.5rem;
     font-variant: small-caps;
 }
 
+.navigation-footer p {
+    margin-bottom: 1.5rem;
+}
+
 @media (prefers-color-scheme: light) {
 
-    #navigation-header, footer {
+    .navigation-header, footer {
         background-color: lightsteelblue;
     }
 
-    #navigation-header a {
+    .navigation-header a {
         color: #111111;
     }
 
-    #navigation-links a:hover {
+    .navigation-links a:hover {
         background-color: #bbbbbb;
     }
 }
 
 @media (prefers-color-scheme: dark) {
 
-    #navigation-header, footer {
+    .navigation-header, footer {
         background-color: #222222;
     }
 
-    #navigation-header a {
+    .navigation-header a {
         color: #eeeeee;
     }
 
-    #navigation-links a:hover {
+    .navigation-links a:hover {
         background-color: #444444;
     }
 }
