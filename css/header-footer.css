@@ -21,9 +21,18 @@ footer {
 }
 
 .navigation-links {
-    padding-top: 1.25rem;
+    padding-top: 1rem;
     float: right;
     padding-right: 0.25rem;
+}
+
+.navigation-links .button {
+    border: none;
+    height: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: large;
 }
 
 .navigation-image img {
@@ -40,6 +49,10 @@ footer {
 
 @media (prefers-color-scheme: light) {
 
+    .navigation-links .button {
+        background-color: lightgray;
+    }
+
     .navigation-header, footer {
         background-color: lightsteelblue;
     }
@@ -54,6 +67,11 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+
+    .navigation-links .button {
+        background-color: rgb(93, 95, 97);
+        color: #eeeeee;
+    }
 
     .navigation-header, footer {
         background-color: #222222;
