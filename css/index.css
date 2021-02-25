@@ -1,4 +1,4 @@
-#main-container {
+.main-container, .container {
     margin-inline: 0.25rem;
 }
 
@@ -6,9 +6,13 @@ li {
     text-align: left;
 }
 
-#index-greeter {
-    text-align: center;
+.index-greeter {
     width: 100%;
+}
+
+.presentation-header {
+    text-align: center;
+    font-variant: small-caps;
 }
 
 footer {

@@ -5,6 +5,22 @@
     transition: 0.3s;
 }
 
+.card-quote {
+    margin-inline: auto;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.card-quote-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
 .card-content-title {
     font-weight: bold;
     font-size: x-large;
@@ -18,22 +34,22 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .card {
+    .card, .card-quote {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
 
-    .card:hover {
+    .card:hover, .card-quote:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    .card {
+    .card, .card-quote {
         background-color: #222222;
         box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2);
     }
 
-    .card:hover {
+    .card:hover, .card-quote:hover {
         box-shadow: 0 8px 16px 0 rgba(200, 200, 200, 0.4);
     }
 }
@@ -64,6 +80,10 @@
 
     .card-content {
         height: 12rem;
+    }
+
+    .card-quote-small, .card-quote.medium, .card-quote-large {
+        width: 96.7%;
     }
 }
 
@@ -146,5 +166,17 @@
 
     .card-large .card-content li {
         text-align: left;
+    }
+
+    .card-quote-small {
+        width: 30%;
+    }
+
+    .card-quote-medium {
+        width: 63.3%;
+    }
+
+    .card-quote-large {
+        width: 96.7%;
     }
 }
