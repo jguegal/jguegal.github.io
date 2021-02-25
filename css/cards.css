@@ -78,13 +78,6 @@
         display: flex;
         margin-bottom: 1.25rem;
     }
-
-    .card-small .card-content {
-        width: 100%;
-        height: 14rem;
-        padding-top: 1rem;
-        text-align: center;
-    }
     
     .card-small {
         width: 30%;
@@ -113,13 +106,6 @@
         object-fit: cover;
         border-radius: 0.5rem;
     }
-    
-    .card-medium .card-content {
-        width: 50%;
-        height: 24rem;
-        padding-top: 1rem;
-        text-align: center;
-    }
 
     .card-large {
         width: 96.7%;
@@ -137,12 +123,25 @@
         object-fit: cover;
         border-radius: 0.5rem;
     }
+
+    .card-content {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .card-small .card-content {
+        width: 100%;
+        height: 14rem;
+    }
+
+    .card-medium .card-content {
+        width: 50%;
+        height: 24rem;
+    }
     
     .card-large .card-content {
         width: 50%;
         height: 24rem;
-        padding-top: 1rem;
-        text-align: center;
     }
 
     .card-large .card-content li {
