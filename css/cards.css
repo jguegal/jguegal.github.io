@@ -83,6 +83,11 @@
         height: 12rem;
     }
 
+    .card-quote-text {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
     .card-quote-small, .card-quote.medium, .card-quote-large {
         width: 100.0%;
     }
