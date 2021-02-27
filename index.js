@@ -6,8 +6,25 @@
   })
 })**/
 
-const showOrHideSection = (section) => {
+const backToGreeter = () => {
+	let container = document.getElementById("projects-container")
+	container.style.display = "none"
+	//container = document.getElementById("aboutme-container")
+	//container.style.display = "none"
+
+	container = document.getElementById("greeter-container")
+	container.style.display = "block"
+
+}
+
+const hideGreeter = () => {
+	container = document.getElementById("greeter-container")
+	container.style.display = "none"
+}
+
+const showSection = (section) => {
+	hideGreeter()
 	const container = document.getElementById(section)
-	container.style.display === "none" ? container.style.display = "block" : container.style.display = "none"
-		
+	if (container.style.display === "none") container.style.display = "block"
+
 }

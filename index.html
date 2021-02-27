@@ -8,9 +8,7 @@
     <title>José Guerrero - Portfolio</title>
     <link rel="icon" href="favicon.ico" />
 
-    <!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/header-footer.css">
     <link rel="stylesheet" type="text/css" href="css/cards.css">
     <script src="index.js" defer></script>
 </head>
@@ -19,25 +17,33 @@
     <header>
         <div class="navigation-header">
             <div class="navigation-image">
-                <a href="index.html"><img src="images/favicon.png" alt="Portfolio logo" /></a>
-            </div>
-            <div class="navigation-links">
-                <button class="button" onclick="showOrHideSection('projects-container')">Projects</button>
-                <a href="about.html"><button class="button">About me</button></a>
+                <button class="navbar-button" onclick="backToGreeter()"><img src="images/favicon.png" alt="Portfolio logo" /></button>
             </div>
         </div>
     </header>
-    <!--<div data-include="header"></div>-->
     <div class="main-container">
-        <div id="greeter-container" class="index-greeter">
+        <div id="greeter-container" class="index-greeter centered-on-screen">
             <div class="presentation-header">
                 <h1>José Guerrero</h1>
                 <h2>Developer | Student</h2>
             </div>
-            <div class="card-quote card-quote-large">
-                <p class="card-quote-text">"My skill is not to master a technology, but to learn and adapt myself
-                    quickly wherever and whenever I'm
-                    necessary"</p>
+            <hr class="greeter-divider" />
+            <div class="greeter-links">
+                <div class="greeter-links-row">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jguegal">
+                        <button class="greeter-button-small button">in</button>
+                    </a>
+                    <button class="greeter-button-medium button" onclick="showSection('projects-container')">Projects</button>
+                </div>
+                <div class="greeter-links-row">
+                    <button class="greeter-button-medium button" onclick="showSection('aboutme-container')">About me</button>
+                    <a href="mailto:jguegal@outlook.com">
+                        <button class="greeter-button-small button">ma</button>
+                    </a>
+                </div>
+                <div class="greeter-links-row">
+
+                </div>
             </div>
         </div>
         <div id="projects-container" style="display: none;">
@@ -87,12 +93,6 @@
             </div>
         </div>
     </div>
-    <!--<div data-include="footer"></div>-->
-    <footer>
-        <div class="navigation-footer">
-            <p>With love from Jaén, Spain by José Guerrero Gallego.</p>
-        </div>
-    </footer>
 </body>
 
 </html>
