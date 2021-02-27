@@ -1,7 +1,3 @@
-.main-container, .container {
-    margin-inline: 0.25rem;
-}
-
 .container-margin {
     margin-top: 1rem;
 }
@@ -56,20 +52,11 @@ li {
 
 .navbar-button {
     border: none;
-    background-color: white;
+    border-radius: 0.5rem;
 }
 
 .greeter-links-row a {
     text-decoration: none;
-}
-
-[class^="greeter-button-"] {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-[class^="greeter-button-"]:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 @media (prefers-color-scheme: light) {
@@ -77,12 +64,42 @@ li {
         color: black;
         background-color: white; 
     }
+
+    .navbar-button, [class^="greeter-button"] {
+        background-color: white;
+    }
+
+    [class^="greeter-button-"] {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    
+    [class^="greeter-button-"]:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     body, [class^="greeter-button-"] {
         color: #f5f5f7;
         background-color: black;
+    }
+
+    .navbar-button {
+        background-color: #222222;
+    }
+
+    [class^="greeter-button"] {
+        background-color: #222222;
+    }
+
+    [class^="greeter-button-"] {
+        box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0);
+        transition: 0.3s;
+    }
+    
+    [class^="greeter-button-"]:hover {
+        box-shadow: 0 8px 16px 0 rgba(200, 200, 200, 0.25);
     }
 }
 
@@ -104,6 +121,14 @@ li {
         min-width: 12rem;
         font-variant: small-caps;
     }
+
+    .about-centered-on-screen {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 96.7%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -121,4 +146,16 @@ li {
         font-variant: small-caps;
     }
 
+    .about-centered-on-screen {
+        position: fixed;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 96.7%;
+    }
+
+}
+
+.linkedin:hover {
+    color: #0e76a8;
+    box-shadow: 4px 8px 16px 4px rgba(14, 118, 168, 0.25);
 }

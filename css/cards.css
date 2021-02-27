@@ -65,6 +65,7 @@
         width: 100%;
         margin-block: 1rem;
         margin-bottom: 1.25rem;
+        height: fit-content;
     }
 
     [class^="card-image-"] {
@@ -80,7 +81,14 @@
     }
 
     .card-content {
-        height: 12rem;
+        min-height: 12rem;
+    }
+
+    .card-content-description {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        min-height: fit-content;
+        padding-bottom: 0.25rem;
     }
 
     .card-quote-text {

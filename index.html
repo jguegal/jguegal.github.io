@@ -22,7 +22,7 @@
             </div>
         </div>
     </header>
-    <div class="main-container">
+    <div>
         <div id="greeter-container" class="index-greeter centered-on-screen">
             <div class="presentation-header">
                 <h1>José Guerrero</h1>
@@ -31,11 +31,12 @@
             <hr class="greeter-divider" />
             <div class="greeter-links">
                 <div class="greeter-links-row">
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jguegal">
-                        <button class="greeter-button-small button">in</button>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jguegal"
+                        alt="Go to my LinkedIn profile" title="Go to my LinkedIn profile">
+                        <button class="greeter-button-small button linkedin">in</button>
                     </a>
-                    <button class="greeter-button-medium button"
-                        onclick="showSection('projects-container')">Projects</button>
+                    <button class="greeter-button-medium button" onclick="showSection('projects-container')"
+                        alt="See some of my projects" title="See some of my projects">Projects</button>
                 </div>
                 <div class="greeter-links-row">
                     <button class="greeter-button-medium button" onclick="showSection('aboutme-container')">About
@@ -96,19 +97,20 @@
             </div>
         </div>
 
-        <div id="aboutme-container" class="container-margin centered-on-screen" style="display: none;">
-            <div class="index-cards">
-                <div class="index-cards-row">
-                    <div class="card card-large">
-                        <div class="card-image-large">
-                            <img src="images/code-example.webp">
-                        </div>
-                        <div class="card-content">
-                            <p class="card-content-title">It's me</p>
-                            <div class="card-content-description">
-                                <p>José Guerrero Gallego!</p>
-                            </div>
-                        </div>
+        <div id="aboutme-container" class="about-centered-on-screen" style="display: none;">
+            <div class="card card-large">
+                <div class="card-image-large">
+                    <img src="images/code-example.webp">
+                </div>
+                <div class="card-content">
+                    <p class="card-content-title">It's me</p>
+                    <div class="card-content-description">
+                        <p>Most of the time a student in the University of Jaén, I love to discover, investigate
+                            and develop in whatever framework or technology I'm interested in at the moment.</p>
+                        <p>I've been in an intership with a swedish company called Ally, in which I helped to
+                            develop, test and maintain its backend.
+                        </p>
+                        <p>Want to know more? Head to my LinkedIn</p>
                     </div>
                 </div>
             </div>
