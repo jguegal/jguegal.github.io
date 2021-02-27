@@ -55,7 +55,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    #index-cards{
+    .index-cards{
         width: 100%;
         display: grid;
         margin-inline: auto;

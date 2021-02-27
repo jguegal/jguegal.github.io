@@ -17,7 +17,8 @@
     <header>
         <div class="navigation-header">
             <div class="navigation-image">
-                <button class="navbar-button" onclick="backToGreeter()"><img src="images/favicon.png" alt="Portfolio logo" /></button>
+                <button class="navbar-button" onclick="backToGreeter()"><img src="images/favicon.png"
+                        alt="Portfolio logo" /></button>
             </div>
         </div>
     </header>
@@ -33,10 +34,12 @@
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jguegal">
                         <button class="greeter-button-small button">in</button>
                     </a>
-                    <button class="greeter-button-medium button" onclick="showSection('projects-container')">Projects</button>
+                    <button class="greeter-button-medium button"
+                        onclick="showSection('projects-container')">Projects</button>
                 </div>
                 <div class="greeter-links-row">
-                    <button class="greeter-button-medium button" onclick="showSection('aboutme-container')">About me</button>
+                    <button class="greeter-button-medium button" onclick="showSection('aboutme-container')">About
+                        me</button>
                     <a href="mailto:jguegal@outlook.com">
                         <button class="greeter-button-small button">ma</button>
                     </a>
@@ -46,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div id="projects-container" style="display: none;">
+        <div id="projects-container" class="container-margin" style="display: none;">
             <div id="index-cards">
                 <div class="index-cards-row">
                     <div class="card card-small">
@@ -86,6 +89,24 @@
                             <p class="card-content-title">A really big card :)</p>
                             <div class="card-content-description">
                                 <p>I really should think what to include here...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="aboutme-container" class="container-margin centered-on-screen" style="display: none;">
+            <div class="index-cards">
+                <div class="index-cards-row">
+                    <div class="card card-large">
+                        <div class="card-image-large">
+                            <img src="images/code-example.webp">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-content-title">It's me</p>
+                            <div class="card-content-description">
+                                <p>José Guerrero Gallego!</p>
                             </div>
                         </div>
                     </div>
