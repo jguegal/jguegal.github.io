@@ -147,15 +147,25 @@ li {
     }
 
     .about-centered-on-screen {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-height: 40rem) {
+    .about-centered-on-screen {
         position: fixed;
         top: 50%;
         transform: translate(0, -50%);
         width: 96.7%;
     }
-
 }
 
 .linkedin:hover {
     color: #0e76a8;
     box-shadow: 4px 8px 16px 4px rgba(14, 118, 168, 0.25);
+}
+
+
+.utficon-button {
+    padding-bottom: 0.45rem;
 }
